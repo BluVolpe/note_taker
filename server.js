@@ -1,18 +1,22 @@
+// Requiring express/http/fs to be used
 const express = require("express");
 const http = require("http");
 const fs = require("fs");
 
+// create an instance of express
 const app = express();
-const server = http.Server(app);
+const PORT = process.env.PORT || 3000;
 
-// app.get("/", function (req, res) {
-//     res.send(JSON.parse(fs.readFileSync("./db/db.json")));
-// })
+// sets up the Express app to handle data parsing
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));
 
-app.get("/", function (req, res) {
-  res.sendFile("./public/index.html");
-});
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
-server.listen(3001, function () {
-  console.log("now listening");
-});
+// LISTENER
+// code to start the server
+app.listen(PORT, () =>
+  console.log(`Listening on PORT: http://localhost:${PORT}`)
+);
