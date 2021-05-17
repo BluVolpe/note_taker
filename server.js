@@ -5,6 +5,7 @@ const fs = require("fs");
 
 // create an instance of express
 const app = express();
+// sets an initial port for listener
 const PORT = process.env.PORT || 3000;
 
 // sets up the Express app to handle data parsing

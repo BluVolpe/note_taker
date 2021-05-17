@@ -1,6 +1,1 @@
-[
-  {
-    "title": "Test Title",
-    "text": "Test text"
-  }
-]
+[{"title":"First note","text":"text","id":"3c16061a-fc2b-47dd-ad53-a96651843fcc"},{"title":"Second note","text":"more text","id":"d94838e1-bfb0-4383-be46-b988cc1ad064"},{"title":"Yo","text":"Hi","id":"6cc6ab24-5b2d-4f96-8625-6692becc668a"},{"title":"Title","text":"Words","id":"8045ad74-d7b9-4653-b67f-b60eb06289f5"},{"title":"New titlte!!","text":"ISAFsa","id":"f29768f0-aa83-4178-9dab-64df7e8c7d59"},{"title":"Once more","text":"Another test","id":"30c72a8e-196d-4d95-8c6f-c4a14d009caa"},{"title":"Once more","text":"Another test","id":"8833c1ba-f802-4318-a024-993958e1d8a7"}]
